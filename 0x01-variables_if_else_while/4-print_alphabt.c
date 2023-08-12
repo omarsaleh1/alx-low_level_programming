@@ -1,19 +1,24 @@
 #include <stdio.h>
 /* more headers goes here */
+
 /**
-  Main : Entry point of function
-* Description : these program for printing lowercase alphabet without 'e' and 'q'*
-* Return always 0 success
+* main - Entry point of the program
+*
+* Description: Prints the lowercase alphabet excluding 'e' and 'q'.
+*
+* Return: Always 0 (success)
 **/
-int main() {
+int main(void)
+{
 char letter;
+
 letter = 'a';
-while (letter <= 'z') {
-if (letter != 'e' && letter != 'q') {
+while (letter <= 'z')
+{
+if (letter != 'e' && letter != 'q')
 putchar(letter);
-}
 letter++;
 }
 putchar('\n');
-return(0);
+return (0);
 }
